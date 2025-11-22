@@ -1,0 +1,243 @@
+.tutorials-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tutorials-header h1 {
+  color: #4CAF50;
+  font-size: 36px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tutorials-header h1 span {
+  font-size: 42px;
+}
+
+.tutorials-subtitle {
+  color: #666;
+  font-size: 18px;
+  margin: 0;
+}
+
+.crop-filter {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.crop-filter label {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+}
+
+.crop-select {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.crop-select:focus {
+  outline: none;
+  border-color: #45a049;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.crop-select:hover {
+  border-color: #45a049;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.tutorial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(76, 175, 80, 0.3);
+  border-color: #4CAF50;
+}
+
+.tutorial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.language-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+}
+
+.language-badge[data-lang="Tamil"] {
+  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+}
+
+.duration-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #f5f5f5;
+  color: #666;
+}
+
+.tutorial-title {
+  color: #333;
+  font-size: 20px;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  line-height: 1.4;
+  min-height: 56px;
+}
+
+.tutorial-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  min-height: 42px;
+}
+
+.tutorial-category {
+  color: #4CAF50;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.btn-watch-video {
+  width: 100%;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #ff5252 0%, #ff1744 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 82, 82, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-watch-video:hover {
+  background: linear-gradient(135deg, #ff1744 0%, #d50000 100%);
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(255, 82, 82, 0.5);
+}
+
+.btn-watch-video:active {
+  transform: scale(0.98);
+}
+
+.no-videos {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-videos p {
+  color: #666;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tutorials-header h1 {
+    font-size: 28px;
+  }
+
+  .tutorials-header h1 span {
+    font-size: 32px;
+  }
+
+  .tutorials-subtitle {
+    font-size: 16px;
+  }
+
+  .tutorials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .crop-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .crop-select {
+    width: 100%;
+  }
+
+  .tutorial-card {
+    padding: 20px;
+  }
+
+  .tutorial-title {
+    font-size: 18px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tutorials-header h1 {
+    font-size: 24px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-watch-video {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}

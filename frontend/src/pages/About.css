@@ -1,0 +1,43 @@
+.about-content {
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.about-features,
+.about-tech {
+  margin-top: 30px;
+}
+
+.about-features h2,
+.about-tech h2 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.about-features ul,
+.about-tech ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-features li,
+.about-tech li {
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.about-features li:before,
+.about-tech li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
